@@ -1,2 +1,2 @@
 # ProjetosPython
-Repositórios para guardar meus projetos Python, durante a disciplina de Laboratório de Programação
+Repositórios para guardar meus projetos e exercicios em Python, durante a disciplina de Laboratório de Programação
