@@ -43,6 +43,3 @@ for i in range(n):
    x = int(input("Entre com um número:"))
    tupla = tupla + tuple([x])
 print(tupla)
-
-print("="*30)
-#DICIONARIO
