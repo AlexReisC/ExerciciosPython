@@ -59,3 +59,41 @@ del  eng2sp['one']
 print(eng2sp)
 #popitem remove o ultimo par e retorna-os
 print(eng2sp.popitem())
+
+#update atualiza um dicionario
+dic_a = {"A": "Avião", "B": "Barco"}
+dic_b = {"B": "Balão", "C": "Carro"}
+dic_a.update(dic_b)
+print(dic_a)
+
+#keys retorna uma estrutura com as chaves do dicionário, que pode ser convertida para uma lista
+lugar = {"Lat": -22.817087, "Long": -47.069750}
+print(lugar.keys())
+print(list(lugar.keys()))
+
+#items retorna uma estrutura que pode ser convertida para uma lista de tuplas, onde cada tupla é composta pelo par (chave, valor)
+lugar = {"Lat": -22.817087, "Long": -47.069750}
+print(lugar.items())
+print(list(lugar.items()))
+
+#iteração em uma lista de chaves usando o método keys
+dic = {"A": "Abacate",  "B": "Banana", "C": "Caqui" }
+for letra in dic.keys():
+    print("Letra: ", letra)
+
+#Podemos iterar sobre uma lista de valores utilizando o método values.
+dic = {"A": "Abacate",  "B": "Banana", "C": "Caqui" }
+for letra in dic.values():
+    print("Letra:", letra)
+
+#Podemos também iterar sobre uma lista de tuplas contendo as chaves e os valores utilizando o método items.
+dic = { "A": "Abacate", "B": "Banana",  "C": "Caqui" }
+for (letra, fruta) in dic.items():
+    print("Fruta com Letra", letra, ":", fruta)
+
+#copiar dicionarios
+dic_a = {"Nome": "João", "Idade": 18}
+print(dic_a)  # {'Nome': 'João', 'Idade': 18}
+dic_b = dic_a.copy()
+#dic_b["Nome"] = "Maria"
+print(dic_b)
