@@ -51,3 +51,11 @@ print(agenda)
 agenda["Teresa"] = [65443322]
 print(agenda)
 
+#remover um valor e chave
+numeracao = eng2sp.pop('four')
+print(numeracao)
+
+del  eng2sp['one']
+print(eng2sp)
+#popitem remove o ultimo par e retorna-os
+print(eng2sp.popitem())
